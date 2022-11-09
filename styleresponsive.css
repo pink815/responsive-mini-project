@@ -1,0 +1,238 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+img {
+    max-width: 600px;
+    max-height: 300px;
+}
+
+/* HEADER */
+
+header {
+    background-color: black;
+
+}
+
+.navigation {
+    font: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    margin: 0;
+}
+
+.navigation__link {
+    color: white;
+}
+
+/* LANDING PAGE */ 
+
+.welcome {
+    background-color:rgb(243, 199, 175);
+    padding: 24px;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 72px; 
+    display: flex;
+    justify-content: center;
+}
+
+.welcome__description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 36px;
+    padding: 24px 0;
+}
+
+.button__welcome {
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/*ABOUT US*/
+
+.about__us {
+    background-color:rgb(191, 225, 195);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.about__us__description {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-size: 24px;
+    padding: 24px 0;
+}
+
+.about__us__description__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+/* SERVICES */
+
+.services {
+    background-color:rgb(175, 227, 243);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services__description {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-size: 24px;
+    padding: 24px 0;
+    align-items: center;
+}
+
+/* CONTACT US */
+
+.contact__us {
+    background-color:rgb(246, 215, 239);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button__form {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.footer__link {
+    color: white;
+}
+
+
+/* RESPONSIVENESS */
+
+@media (max-width: 728px) {
+
+    /* HEADER */
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+    }
+    
+   /* LANDING PAGE */
+
+    h1 {
+        font-size: 48px; 
+    }
+    
+    .welcome__description {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        font-size: 24px;
+        padding: 16px;
+    }
+    
+    .button__welcome {
+        font-size: 24px;
+    }
+
+   /* ABOUT US */
+
+    h2 {
+        font-size: 36px;
+    }
+    
+    .about__us__description {
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        font-size: 20px;
+    }
+    
+    /* SERVICES */
+        
+    .services__description {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+       
+    }
+    
+    /* CONTACT US */
+    
+    .contact__us {
+        padding: 8px;
+    }
+    
+    form {
+        width: 500px;
+    }
+    
+}
